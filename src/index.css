@@ -1,0 +1,31 @@
+@import "tailwindcss";
+html{
+    scroll-behavior: smooth;
+}
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 3s linear infinite;
+}
+
+@keyframes gradient-x {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-x-reverse {
+  background-size: 200% 200%;
+  animation: gradient-x-reverse 3s linear infinite;
+}
+
+@keyframes gradient-x-reverse {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
