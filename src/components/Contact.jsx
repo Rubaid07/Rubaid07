@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaFacebook, FaDiscord } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFacebook, FaDiscord, FaEnvelope } from 'react-icons/fa';
 
 const Contact = () => {
   return (
@@ -17,6 +17,17 @@ const Contact = () => {
 
           {/* Enhanced Social Links */}
           <div className="bg-white p-8 rounded-xl shadow-md">
+            <div className="flex items-start mb-6">
+              <div className="flex-shrink-0 p-2 bg-blue-50 rounded-lg">
+                <FaEnvelope className="text-blue-500 text-lg" />
+              </div>
+              <div className="ml-4">
+                <h4 className="text-sm font-medium text-gray-500">Email</h4>
+                <a href="mailto:mohammadrubaid07@gmail.com" className="text-gray-700 hover:text-blue-500">
+                  mohammadrubaid07@gmail.com
+                </a>
+              </div>
+            </div>
             <h3 className="text-xl font-semibold text-gray-800 mb-6">Find Me Online</h3>
 
             <div className="grid grid-cols-2 gap-4">
@@ -67,11 +78,12 @@ const Contact = () => {
 
             <a
               href="mailto:mohammadrubaid07@gmail.com?subject=Let's%20Work%20Together&body=Hi%20there%2C%0A%0AI%20found%20your%20portfolio%20and%20wanted%20to%20reach%20out..."
-              className="group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-gray-800/30 backdrop-blur-lg px-6 py-2 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-100 hover:shadow-xl hover:shadow-gray-600/50 border border-white/20 cursor-pointer"
+              aria-label="Send email to Mohammad Rubaid"
+              className="group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-gray-800/30 backdrop-blur-md px-6 py-2 text-base font-semibold text-white transition-transform duration-200 ease-out hover:scale-95 active:scale-95 hover:shadow-lg hover:shadow-gray-600/30 border border-white/20 cursor-pointer"
             >
               <span className="text-lg">Send me Message</span>
               <div
-                className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]"
+                className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-700 group-hover/button:[transform:skew(-13deg)_translateX(100%)]"
               >
                 <div className="relative h-full w-10 bg-white/20"></div>
               </div>

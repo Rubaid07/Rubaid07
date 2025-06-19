@@ -1,7 +1,6 @@
 @import "tailwindcss";
 html{
     scroll-behavior: smooth;
-    scroll-padding-top: 25px;
 }
 .animate-gradient-x {
   background-size: 200% 200%;
@@ -21,6 +20,7 @@ html{
   background-size: 200% 200%;
   animation: gradient-x-reverse 3s linear infinite;
 }
+
 
 @keyframes gradient-x-reverse {
   0% {

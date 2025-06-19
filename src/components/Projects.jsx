@@ -7,9 +7,9 @@ const Projects = () => {
             title: "E-Commerce Platform",
             description: "A full-featured online store with product listings, cart functionality, and secure checkout.",
             tags: ["React", "Node.js", "MongoDB", "Stripe"],
-            image: "/ecommerce.jpg",
+            image: "https://i.postimg.cc/MK0SgySg/Screenshot-5.png",
             github: "https://github.com/yourusername/ecommerce",
-            live: "https://your-ecommerce-site.com"
+            live: "https://pack2go07.web.app/"
         },
         {
             title: "Task Management App",
@@ -77,11 +77,11 @@ const Projects = () => {
 
                             <div className="relative bg-white rounded-xl h-full overflow-hidden shadow-md hover:shadow-lg">
                                 {/* Project Image */}
-                                <div className="h-48 overflow-hidden">
+                                <div className="h-56 overflow-hidden">
                                     <img
                                         src={project.image}
                                         alt={project.title}
-                                        className="w-full h-full object-cover"
+                                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                                     />
                                 </div>
 
