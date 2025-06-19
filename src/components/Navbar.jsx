@@ -1,18 +1,22 @@
-import { FiHome, FiFolder, FiMail, FiGithub, FiLinkedin } from 'react-icons/fi';
+import { FiHome, FiCode, FiFolder, FiMail } from 'react-icons/fi';
 import { useEffect, useState } from 'react';
-import { VscCode } from 'react-icons/vsc';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
-  const scrollToSection = (id) => {
-  const section = document.getElementById(id);
-  if (section) {
-    section.scrollIntoView({ behavior: 'smooth' });
-  }
-};
   const [activeSection, setActiveSection] = useState('home');
-  
+  const [scrolled, setScrolled] = useState(false);
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   useEffect(() => {
     const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+      
       const sections = ['home', 'skills', 'projects', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
@@ -34,58 +38,53 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const navItems = [
+    { id: 'home', icon: <FiHome size={20} />, label: 'Home' },
+    { id: 'skills', icon: <FiCode size={20} />, label: 'Skills' },
+    { id: 'projects', icon: <FiFolder size={20} />, label: 'Projects' },
+    { id: 'contact', icon: <FiMail size={20} />, label: 'Contact' }
+  ];
+
   return (
- <nav className="bg-gray-800/80 backdrop-blur-lg py-3 px-6 rounded-full shadow-lg border border-gray-700/50 flex justify-between items-center w-max mx-auto z-50">
-
-      {/* Main Navigation Links */}
-      <ul className="flex space-x-4">
-        {[
-  { path: "#home", name: "Home", icon: <FiHome />, id: 'home' },
-  { path: "#skills", name: "Skills", icon: <VscCode size={24} />, id: 'skills' },
-  { path: "#projects", name: "Projects", icon: <FiFolder />, id: 'projects' },
-  { path: "#contact", name: "Contact", icon: <FiMail />, id: 'contact' },
-].map((item) => (
-  <li key={item.path}>
-    <button
-      onClick={() => scrollToSection(item.id)}
-      className={`flex cursor-pointer items-center px-4 py-2 rounded-full transition-all duration-300 group relative ${
-        activeSection === item.id
-          ? 'text-cyan-400 bg-gray-700/50'
-          : 'text-gray-300 hover:text-white hover:bg-gray-700/50'
-      }`}
+    <motion.nav 
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.5 }}
+      className={`fixed w-full md:max-w-3xl top-4 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-300 ${
+        scrolled ? 'bg-gray-900/90 backdrop-blur-md shadow-lg' : 'bg-gray-900/80 backdrop-blur-sm '
+      } rounded-full border border-gray-800`}
     >
-      <span className={`mr-2 transition-colors duration-300 ${
-        activeSection === item.id ? 'text-cyan-400' : ''
-      }`}>
-        {item.icon}
-      </span>
-      <span className="font-medium">{item.name}</span>
-    </button>
-  </li>
-))}
-
-      </ul>
-
-      {/* Social Icons */}
-      <div className="hidden md:flex space-x-3 ml-8 border-l border-gray-700/50 pl-4">
-        <a 
-          href="https://github.com" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="p-2 text-gray-400 hover:text-white hover:bg-gray-700/50 rounded-full transition-colors duration-300"
-        >
-          <FiGithub className="text-lg" />
-        </a>
-        <a 
-          href="https://linkedin.com" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="p-2 text-gray-400 hover:text-white hover:bg-gray-700/50 rounded-full transition-colors duration-300"
-        >
-          <FiLinkedin className="text-lg" />
-        </a>
+      <div className="flex items-center px-4 py-2">
+        <ul className="flex w-full justify-around space-x-1 sm:space-x-2">
+          {navItems.map((item) => (
+            <li key={item.id}>
+              <button
+                onClick={() => scrollToSection(item.id)}
+                className={`flex items-center p-2 sm:px-4 sm:py-2 rounded-full transition-colors cursor-pointer relative ${
+                  activeSection === item.id
+                    ? 'text-cyan-400 bg-gray-800'
+                    : 'text-gray-300 hover:text-white hover:bg-gray-800/50'
+                }`}
+                aria-label={item.label}
+              >
+                <span className="sm:mr-2">{item.icon}</span>
+                <span className="hidden sm:inline text-sm font-medium">
+                  {item.label}
+                </span>
+                {activeSection === item.id && (
+                  <motion.span 
+                    className="sm:hidden absolute bottom-1 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-cyan-400 rounded-full sm:bottom-2"
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ type: 'spring', stiffness: 500 }}
+                  />
+                )}
+              </button>
+            </li>
+          ))}
+        </ul>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 
