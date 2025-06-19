@@ -1,6 +1,7 @@
 @import "tailwindcss";
 html{
     scroll-behavior: smooth;
+    scroll-padding-top: 25px;
 }
 .animate-gradient-x {
   background-size: 200% 200%;

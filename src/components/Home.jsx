@@ -7,6 +7,7 @@ import {
 } from 'react-icons/si';
 import { motion } from 'framer-motion';
 import Navbar from './Navbar';
+import { VscChevronDown } from 'react-icons/vsc';
 
 const Home = () => {
   return (
@@ -59,27 +60,25 @@ const Home = () => {
             </p>
 
             <div className="flex gap-4 justify-center md:justify-start pt-4">
-              <a href="/projects">
-                <button className="px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-md text-white font-medium hover:shadow-lg hover:from-cyan-500 hover:to-blue-600 transition duration-300 cursor-pointer">
-                  View Projects
-                </button>
-              </a>
-              <a href="/contact">
-                <button className="px-6 py-3 border border-cyan-400 rounded-md text-cyan-400 font-medium hover:bg-cyan-400/10 transition-all duration-300 cursor-pointer">
-                  Contact Me
-                </button>
-              </a>
+
+              <button
+                onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+                className="px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-md text-white font-medium hover:shadow-lg hover:from-cyan-500 hover:to-blue-600 transition duration-300 cursor-pointer">
+                View Projects
+              </button>
+
+              <button
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                className="px-6 py-3 border border-cyan-400 rounded-md text-cyan-400 font-medium hover:bg-cyan-400/10 transition-all duration-300 cursor-pointer">
+                Contact Me
+              </button>
             </div>
           </div>
 
           {/* Right Orbit Icons Section */}
           <div className="relative w-[400px] h-[400px]">
             {/* Circle background SVG */}
-            <motion.div
-              className="relative w-[400px] h-[400px]"
-              animate={{ rotate: 360 }}
-              transition={{ duration: 40, repeat: Infinity, ease: 'linear' }}
-            >
+           
               <div className="absolute inset-0 flex items-center justify-center opacity-20">
                 <svg viewBox="0 0 600 600" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="300" cy="300" r="280" stroke="white" strokeOpacity="1" fill="none" />
@@ -99,7 +98,6 @@ const Home = () => {
                   </defs>
                 </svg>
               </div>
-            </motion.div>
 
             {/* Center Icon */}
             <div className="absolute top-1/2 left-1/2 w-14 h-14 flex items-center justify-center bg-white/5 backdrop-blur-sm rounded-lg border border-cyan-400/30 -translate-x-1/2 -translate-y-1/2 z-10">
@@ -110,19 +108,28 @@ const Home = () => {
             {[
               { icon: <FaReact className="text-cyan-400 text-2xl" />, position: 'top-6 left-1/2' },
               { icon: <FaJs className="text-yellow-400 text-2xl" />, position: 'top-[20%] right-[20%]' },
-              { icon: <SiFirebase className="text-orange-400 text-2xl" />, position: 'top-[32%] left-[18%]' },
-              { icon: <SiApollographql className="text-pink-400 text-2xl" />, position: 'top-[35%] right-[18%]' },
-              { icon: <FaAws className="text-amber-400 text-2xl" />, position: 'bottom-[35%] right-[16%]' },
-              { icon: <SiVercel className="text-white text-2xl" />, position: 'bottom-[30%] left-[22%]' },
-              { icon: <FaGithub className="text-gray-300 text-2xl" />, position: 'bottom-6 left-1/2' },
+              { icon: <SiFirebase className="text-orange-400 text-2xl" />, position: 'top-[23%] left-[18%]' },
+              { icon: <SiApollographql className="text-pink-400 text-2xl" />, position: 'top-[45%] right-[18%]' },
+              { icon: <FaAws className="text-amber-400 text-2xl" />, position: 'bottom-[20%] right-[16%]' },
+              { icon: <SiVercel className="text-white text-2xl" />, position: 'bottom-[40%] left-[22%]' },
+              { icon: <FaGithub className="text-gray-300 text-2xl" />, position: 'bottom-20 left-[46%]' },
               { icon: <FaCss3Alt className="text-blue-400 text-2xl" />, position: 'bottom-[20%] left-[8%]' },
             ].map((item, index) => (
-              <div
+              <motion.div
                 key={index}
                 className={`absolute ${item.position} w-12 h-12 flex items-center justify-center bg-white/5 backdrop-blur-sm rounded-lg border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300 z-10`}
+                animate={{
+                  y: [0, -18, 0], 
+                }}
+                transition={{
+                  duration: 3, // অ্যানিমেশনের সময়কাল
+                  repeat: Infinity, // অসীমভাবে পুনরাবৃত্তি
+                  ease: "easeInOut", // মসৃণ ইফেক্ট
+                  delay: index * 0.2, // প্রতিটি আইকনের জন্য আলাদা ডেলি
+                }}
               >
                 {item.icon}
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -145,10 +152,7 @@ const Home = () => {
             aria-label="Scroll to skills section"
           >
             <div className="text-cyan-400 group-hover:text-white transition-colors duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 5v14M19 12l-7 7-7-7" />
-              </svg>
+              <VscChevronDown size={26} />
             </div>
           </button>
         </motion.div>

@@ -48,7 +48,7 @@ const Skills = () => {
     <section id="skills" className="py-16 bg-white relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">
-          My Technical Stack
+          My <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400"> Technical Stack</span>
         </h2>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
           Categorized by development expertise

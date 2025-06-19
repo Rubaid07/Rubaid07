@@ -48,7 +48,7 @@ const Navbar = () => {
   <li key={item.path}>
     <button
       onClick={() => scrollToSection(item.id)}
-      className={`flex items-center px-4 py-2 rounded-full transition-all duration-300 group relative ${
+      className={`flex cursor-pointer items-center px-4 py-2 rounded-full transition-all duration-300 group relative ${
         activeSection === item.id
           ? 'text-cyan-400 bg-gray-700/50'
           : 'text-gray-300 hover:text-white hover:bg-gray-700/50'
@@ -67,7 +67,7 @@ const Navbar = () => {
       </ul>
 
       {/* Social Icons */}
-      <div className="flex space-x-3 ml-8 border-l border-gray-700/50 pl-4">
+      <div className="hidden md:flex space-x-3 ml-8 border-l border-gray-700/50 pl-4">
         <a 
           href="https://github.com" 
           target="_blank" 
