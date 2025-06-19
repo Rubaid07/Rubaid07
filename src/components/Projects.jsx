@@ -1,3 +1,4 @@
+import { FaGithub } from 'react-icons/fa';
 import { FiExternalLink, FiGithub } from 'react-icons/fi';
 
 const Projects = () => {
@@ -126,15 +127,23 @@ const Projects = () => {
                     ))}
                 </div>
 
-                <div className="text-center mt-12">
-                    <a
-                        href="https://github.com/yourusername"
-                        target="_blank"
-                        className="px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-md text-white font-medium hover:shadow-lg hover:from-cyan-500 hover:to-blue-600 transition duration-300 cursor-pointer"
-                    >
-                        View All Projects
-                    </a>
-                </div>
+                 <div className="mt-16 text-center">
+          <div className="bg-gradient-to-r from-gray-900 to-blue-900 rounded-xl p-8 text-white">
+            <h3 className="text-2xl font-bold mb-4">Want to see more?</h3>
+            <p className="text-lg text-gray-300 mb-6 max-w-2xl mx-auto">
+              Check out my GitHub profile for more projects, contributions, and code samples.
+            </p>
+            <a
+              href="https://github.com/Rubaid07"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200"
+            >
+              <FaGithub size={20} />
+              View GitHub Profile
+            </a>
+          </div>
+        </div>
             </div>
         </section>
     );

@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaPhone, FaGlobe, FaMapMarkerAlt, FaBusinessTime, FaFacebook } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFacebook, FaDiscord } from 'react-icons/fa';
 
 const Contact = () => {
   return (
@@ -21,10 +21,10 @@ const Contact = () => {
 
             <div className="grid grid-cols-2 gap-4">
               {[
-                { icon: <FaGithub className="text-gray-700 text-xl" />, name: "GitHub", url: "https://github.com/yourusername", color: "bg-gray-50" },
-                { icon: <FaLinkedin className="text-blue-600 text-xl" />, name: "LinkedIn", url: "https://linkedin.com/in/yourusername", color: "bg-blue-50" },
-                { icon: <FaTwitter className="text-blue-400 text-xl" />, name: "Twitter", url: "https://twitter.com/yourusername", color: "bg-blue-50" },
-                { icon: <FaFacebook className="text-blue-500 text-xl" />, name: "Facebook", url: "https://your-portfolio.com", color: "bg-gray-50" },
+                { icon: <FaGithub className="text-gray-700 text-xl" />, name: "GitHub", url: "https://github.com/Rubaid07", color: "bg-gray-50" },
+                { icon: <FaLinkedin className="text-blue-600 text-xl" />, name: "LinkedIn", url: "https://linkedin.com", color: "bg-blue-50" },
+                { icon: <FaDiscord className="text-blue-400 text-xl" />, name: "Discord", url: "https://twitter.com/yourusername", color: "bg-blue-50" },
+                { icon: <FaFacebook className="text-blue-500 text-xl" />, name: "Facebook", url: "https://www.facebook.com/share/16pXPJ42gB/?mibextid=wwXIfr", color: "bg-gray-50" },
               ].map((social) => (
                 <a
                   key={social.name}
@@ -64,23 +64,24 @@ const Contact = () => {
             <p className="text-blue-100 mb-6">
               I'm currently available for freelance projects or full-time positions. Let's discuss how I can help bring your ideas to life!
             </p>
-           
-              <button
-                className="group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-gray-800/30 backdrop-blur-lg px-6 py-2 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-100 hover:shadow-xl hover:shadow-gray-600/50 border border-white/20 cursor-pointer"
+
+            <a
+              href="mailto:mohammadrubaid07@gmail.com?subject=Let's%20Work%20Together&body=Hi%20there%2C%0A%0AI%20found%20your%20portfolio%20and%20wanted%20to%20reach%20out..."
+              className="group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-gray-800/30 backdrop-blur-lg px-6 py-2 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-100 hover:shadow-xl hover:shadow-gray-600/50 border border-white/20 cursor-pointer"
+            >
+              <span className="text-lg">Send me Message</span>
+              <div
+                className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]"
               >
-                <span className="text-lg">Send me Message</span>
-                <div
-                  class="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]"
-                >
-                  <div className="relative h-full w-10 bg-white/20"></div>
-                </div>
-              </button>
+                <div className="relative h-full w-10 bg-white/20"></div>
+              </div>
+            </a>
+
             <p className="text-blue-100 text-sm mt-4">
               Or just say hi! 👋 I love meeting new people in the tech community.
             </p>
           </div>
 
-          {/* Additional Personal Note */}
           <div className="mt-8 text-center">
             <p className="text-gray-600 italic">
               "Every great collaboration starts with a simple conversation. Don't hesitate to reach out - even if it's just to exchange ideas or share your favorite tech stack!"
