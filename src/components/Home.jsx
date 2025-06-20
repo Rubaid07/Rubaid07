@@ -6,16 +6,10 @@ import {
   SiFirebase, SiTypescript, SiApollographql, SiVercel,
 } from 'react-icons/si';
 import { motion } from 'framer-motion';
-import Navbar from './Navbar';
 import { VscChevronDown } from 'react-icons/vsc';
 
 const Home = () => {
   return (
-    <>
-      <div className="w-full flex justify-center fixed top-4 sm:top-6 z-50 px-4">
-        <Navbar />
-      </div>
-
       <section
         id="home"
         className="min-h-screen flex items-center justify-center bg-gray-900 relative overflow-hidden pt-16 sm:pt-0"
@@ -24,7 +18,7 @@ const Home = () => {
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -inset-10 opacity-20">
             <motion.div
-              className="absolute top-1/4 left-1/4 w-48 h-48 sm:w-72 sm:h-72 bg-blue-600 rounded-full mix-blend-multiply filter blur-xl opacity-20"
+              className="sm:absolute sm:top-1/4 sm:left-1/4 md:w-48 md:h-48 sm:w-72 sm:h-72 sm:bg-blue-600 sm:rounded-full sm:mix-blend-multiply sm:filter sm:blur-xl sm:opacity-20"
               animate={{ scale: [1, 1.05, 1], opacity: [0.2, 0.4, 0.2] }}
               transition={{ duration: 15, repeat: Infinity, ease: 'easeInOut' }}
             />
@@ -148,7 +142,6 @@ const Home = () => {
           </button>
         </motion.div>
       </section>
-    </>
   );
 };
 

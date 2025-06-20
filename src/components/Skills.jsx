@@ -66,7 +66,7 @@ const Skills = () => {
                   <div className="mr-3">{category.icon}</div>
                   <h3 className="text-lg font-semibold text-gray-800">{category.name}</h3>
                 </div>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                <div className="grid grid-cols-3 sm:grid-cols-3 gap-4">
                   {category.skills.map((skill) => (
                     <div
                       key={skill.name}

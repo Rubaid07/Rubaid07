@@ -50,9 +50,9 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`fixed w-full md:max-w-xl top-4 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-300 ${
+      className={`fixed w-full md:max-w-xl sm:top-4 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-300 ${
         scrolled ? 'bg-gray-900/90 backdrop-blur-md shadow-lg' : 'bg-gray-900/80 backdrop-blur-sm '
-      } rounded-full border border-gray-800`}
+      } sm:rounded-full border border-gray-800`}
     >
       <div className="flex items-center px-4 py-2">
         <ul className="flex w-full justify-around space-x-1 sm:space-x-2">
