@@ -54,7 +54,7 @@ const rubaid = {
 ---
 
 📈 GitHub Stats
-<p align="center"> <img width="48%" src="https://github-readme-stats.vercel.app/api?username=Rubaid07&show_icons=true&theme=react" /> </p><p align="center"> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rubaid07&layout=compact&theme=react&hide=php,java" /> </p>
+<p align="center"> <img width="48%" src="https://github-readme-stats.vercel.app/api?username=Rubaid07&count_private=true&cache_seconds=1" /> </p><p align="center"> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rubaid07&layout=compact&theme=react&hide=php,java&cache_seconds=1" /> </p>
 
 
 
