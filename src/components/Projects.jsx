@@ -4,23 +4,31 @@ import { FiExternalLink, FiGithub } from 'react-icons/fi';
 const Projects = () => {
     const projects = [
         {
-            title: "Tour Package Booking Platform",
-            description: "Pack2Go is a complete tour package booking platform where users can explore, book, and manage travel packages.",
+            title: "Pack2Go",
+            description: "It is a Full Stack project. it's is a complete tour package booking platform where users can explore, book, and manage travel packages.",
             tags: ["React", "MongoDB", "TailwindCSS", "JWT", "ExpressJs"],
             image: "https://i.postimg.cc/MK0SgySg/Screenshot-5.png",
             github: "https://github.com/yourusername/ecommerce",
             live: "https://pack2go07.web.app/"
         },
         {
-            title: "Freelance Task Marketplace",
-            description: "A simple and modern platform where users can post freelance tasks, and freelancers can bid on those tasks based on skills, budget, and deadlines.",
+            title: "Task Tide",
+            description: "It is a Full Stack project. it's simple and modern platform where users can post freelance tasks, and freelancers can bid on those tasks based on skills, budget, and deadlines.",
             tags: ["React", "Firebase", "Tailwind CSS", "ExpressJs", "MongoDB"],
             image: "https://i.postimg.cc/9FXDhMVW/tasktide1.png",
             github: "https://github.com/Rubaid07/TaskTide",
             live: "https://tasktide07.web.app/"
         },
         {
-            title: "Task Management App",
+            title: "Pay Pilot",
+            description: "PayPilot is a modern, responsive and secure utility bill management platform. It allows users to pay various bills including electricity, gas, water, tuition, and more — all from one place.",
+            tags: ["React", "Firebase", "Tailwind CSS", "Daisyui"],
+            image: "https://i.postimg.cc/4xD2KnJc/Screenshot-6.png",
+            github: "https://github.com/Rubaid07/PayPilot",
+            live: "paypilot07.web.app/"
+        },
+        {
+            title: "Comming soon",
             description: "A productivity app for organizing tasks with drag-and-drop functionality and team collaboration.",
             tags: ["Next.js", "Firebase", "Tailwind CSS"],
             image: "/taskapp.jpg",
@@ -28,7 +36,7 @@ const Projects = () => {
             live: "https://your-taskapp.com"
         },
         {
-            title: "Task Management App",
+            title: "Comming soon",
             description: "A productivity app for organizing tasks with drag-and-drop functionality and team collaboration.",
             tags: ["Next.js", "Firebase", "Tailwind CSS"],
             image: "/taskapp.jpg",
@@ -36,16 +44,8 @@ const Projects = () => {
             live: "https://your-taskapp.com"
         },
         {
-            title: "Task Management App",
-            description: "A productivity app for organizing tasks with drag-and-drop functionality and team collaboration.",
-            tags: ["Next.js", "Firebase", "Tailwind CSS"],
-            image: "/taskapp.jpg",
-            github: "https://github.com/yourusername/taskapp",
-            live: "https://your-taskapp.com"
-        },
-        {
-            title: "Portfolio Website",
-            description: "A personal portfolio website showcasing projects and skills with modern animations.",
+            title: "Comming soon",
+            description: "A personal portfolio website s`howcasing projects and skills with modern animations.",
             tags: ["React", "Framer Motion", "GSAP"],
             image: "/portfolio.jpg",
             github: "https://github.com/yourusername/portfolio",
@@ -77,7 +77,7 @@ const Projects = () => {
 
                             <div className="relative bg-white rounded-xl h-full overflow-hidden shadow-md hover:shadow-lg">
                                 {/* Project Image */}
-                                <div className="h-56 overflow-hidden">
+                                <div className="h-58 overflow-hidden">
                                     <img
                                         src={project.image}
                                         alt={project.title}
