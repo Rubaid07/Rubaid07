@@ -4,20 +4,20 @@ import { FiExternalLink, FiGithub } from 'react-icons/fi';
 const Projects = () => {
     const projects = [
         {
-            title: "E-Commerce Platform",
-            description: "A full-featured online store with product listings, cart functionality, and secure checkout.",
-            tags: ["React", "Node.js", "MongoDB", "Stripe"],
+            title: "Tour Package Booking Platform",
+            description: "Pack2Go is a complete tour package booking platform where users can explore, book, and manage travel packages.",
+            tags: ["React", "MongoDB", "TailwindCSS", "JWT", "ExpressJs"],
             image: "https://i.postimg.cc/MK0SgySg/Screenshot-5.png",
             github: "https://github.com/yourusername/ecommerce",
             live: "https://pack2go07.web.app/"
         },
         {
-            title: "Task Management App",
-            description: "A productivity app for organizing tasks with drag-and-drop functionality and team collaboration.",
-            tags: ["Next.js", "Firebase", "Tailwind CSS"],
-            image: "/taskapp.jpg",
-            github: "https://github.com/yourusername/taskapp",
-            live: "https://your-taskapp.com"
+            title: "Freelance Task Marketplace",
+            description: "A simple and modern platform where users can post freelance tasks, and freelancers can bid on those tasks based on skills, budget, and deadlines.",
+            tags: ["React", "Firebase", "Tailwind CSS", "ExpressJs", "MongoDB"],
+            image: "https://i.postimg.cc/9FXDhMVW/tasktide1.png",
+            github: "https://github.com/Rubaid07/TaskTide",
+            live: "https://tasktide07.web.app/"
         },
         {
             title: "Task Management App",

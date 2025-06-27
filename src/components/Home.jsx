@@ -104,7 +104,7 @@ const Home = () => {
                 key={index}
                 className={`absolute ${item.position} w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 flex items-center justify-center bg-white/5 backdrop-blur-sm rounded-lg border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300 z-10`}
                 animate={{
-                  y: [0, -12, 0], // Reduced animation range for mobile
+                  y: [0, -7, 0], // Reduced animation range for mobile
                 }}
                 transition={{
                   duration: 3,
@@ -120,16 +120,8 @@ const Home = () => {
         </div>
 
         {/* Scroll Button */}
-        <motion.div
-          className="absolute bottom-6 sm:bottom-10 left-1/2 transform -translate-x-1/2 z-10"
-          animate={{
-            y: [0, -8, 0], // Reduced bounce for mobile
-          }}
-          transition={{
-            duration: 2,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
+        <div
+          className="absolute bottom-6 sm:bottom-10 animate-bounce z-10 "
         >
           <button
             onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}
@@ -140,7 +132,7 @@ const Home = () => {
               <VscChevronDown size={20} className="sm:w-6 sm:h-6" />
             </div>
           </button>
-        </motion.div>
+        </div>
       </section>
   );
 };

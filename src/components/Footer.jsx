@@ -1,6 +1,3 @@
-import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaHeart } from 'react-icons/fa';
-
 const Footer = () => {
     return (
         <footer className="bg-gray-50 border-t border-gray-200 py-5">
