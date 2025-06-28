@@ -34,8 +34,8 @@ const Contact = () => {
               {[
                 { icon: <FaGithub className="text-gray-700 text-xl" />, name: "GitHub", url: "https://github.com/Rubaid07", color: "bg-gray-50" },
                 { icon: <FaLinkedin className="text-blue-600 text-xl" />, name: "LinkedIn", url: "https://linkedin.com", color: "bg-blue-50" },
-                { icon: <FaDiscord className="text-blue-400 text-xl" />, name: "Discord", url: "https://twitter.com/yourusername", color: "bg-blue-50" },
-                { icon: <FaFacebook className="text-blue-500 text-xl" />, name: "Facebook", url: "https://www.facebook.com/share/16pXPJ42gB/?mibextid=wwXIfr", color: "bg-gray-50" },
+                { icon: <FaDiscord className="text-blue-400 text-xl" />, name: "Discord", url: "https://discord.gg/QbY4XwHD", color: "bg-blue-50" },
+                { icon: <FaFacebook className="text-blue-500 text-xl" />, name: "Facebook", url: "https://www.facebook.com/rubaid.rahman.589", color: "bg-gray-50" },
               ].map((social) => (
                 <a
                   key={social.name}
