@@ -7,7 +7,7 @@ const Projects = () => {
             title: "Pack2Go",
             description: "It is a Full Stack project. it's is a complete tour package booking platform where users can explore, book, and manage travel packages.",
             tags: ["React", "MongoDB", "TailwindCSS", "JWT", "ExpressJs"],
-            image: "https://i.postimg.cc/MK0SgySg/Screenshot-5.png",
+            image: "https://i.postimg.cc/3wxndqTc/pack2go.png",
             github: "https://github.com/yourusername/ecommerce",
             live: "https://pack2go07.web.app/"
         },
@@ -15,7 +15,7 @@ const Projects = () => {
             title: "Task Tide",
             description: "It is a Full Stack project. it's simple and modern platform where users can post freelance tasks, and freelancers can bid on those tasks based on skills, budget, and deadlines.",
             tags: ["React", "Firebase", "Tailwind CSS", "ExpressJs", "MongoDB"],
-            image: "https://i.postimg.cc/9FXDhMVW/tasktide1.png",
+            image: "https://i.postimg.cc/FzLPhJ4F/tasktide.png",
             github: "https://github.com/Rubaid07/TaskTide",
             live: "https://tasktide07.web.app/"
         },
@@ -23,9 +23,9 @@ const Projects = () => {
             title: "Pay Pilot",
             description: "PayPilot is a modern, responsive and secure utility bill management platform. It allows users to pay various bills including electricity, gas, water, tuition, and more — all from one place.",
             tags: ["React", "Firebase", "Tailwind CSS", "Daisyui"],
-            image: "https://i.postimg.cc/4xD2KnJc/Screenshot-6.png",
+            image: "https://i.postimg.cc/g0z8JPmC/paypilot.png",
             github: "https://github.com/Rubaid07/PayPilot",
-            live: "paypilot07.web.app/"
+            live: "https://paypilot07.web.app/"
         },
         {
             title: "Comming soon",
@@ -77,7 +77,7 @@ const Projects = () => {
 
                             <div className="relative bg-white rounded-xl h-full overflow-hidden shadow-md hover:shadow-lg">
                                 {/* Project Image */}
-                                <div className="h-58 overflow-hidden">
+                                <div className="overflow-hidden">
                                     <img
                                         src={project.image}
                                         alt={project.title}

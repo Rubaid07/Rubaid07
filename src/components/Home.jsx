@@ -1,9 +1,11 @@
 'use client';
 import {
-  FaReact, FaJs, FaGithub, FaAws, FaCss3Alt,
+  FaReact, FaJs, FaGithub, FaCss3Alt,
 } from 'react-icons/fa';
 import {
-  SiFirebase, SiTypescript, SiApollographql, SiVercel,
+  SiFirebase, SiTypescript, SiVercel,
+  SiMongodb,
+  SiTailwindcss,
 } from 'react-icons/si';
 import { motion } from 'framer-motion';
 import { VscChevronDown } from 'react-icons/vsc';
@@ -94,8 +96,8 @@ const Home = () => {
               { icon: <FaReact className="text-cyan-400 text-xl sm:text-2xl" />, position: 'top-4 sm:top-6 left-1/2' },
               { icon: <FaJs className="text-yellow-400 text-xl sm:text-2xl" />, position: 'top-[20%] right-[20%]' },
               { icon: <SiFirebase className="text-orange-400 text-xl sm:text-2xl" />, position: 'top-[23%] left-[18%]' },
-              { icon: <SiApollographql className="text-pink-400 text-xl sm:text-2xl" />, position: 'top-[45%] right-[18%]' },
-              { icon: <FaAws className="text-amber-400 text-xl sm:text-2xl" />, position: 'bottom-[20%] right-[16%]' },
+              { icon: <SiMongodb className="text-green-500 text-xl sm:text-2xl" />, position: 'top-[45%] right-[18%]' },
+              { icon: <SiTailwindcss className="text-cyan-400 text-xl sm:text-2xl" />, position: 'bottom-[20%] right-[16%]' },
               { icon: <SiVercel className="text-white text-xl sm:text-2xl" />, position: 'bottom-[40%] left-[22%]' },
               { icon: <FaGithub className="text-gray-300 text-xl sm:text-2xl" />, position: 'bottom-16 sm:bottom-20 left-[46%]' },
               { icon: <FaCss3Alt className="text-blue-400 text-xl sm:text-2xl" />, position: 'bottom-[20%] left-[8%]' },
