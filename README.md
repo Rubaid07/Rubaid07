@@ -30,7 +30,7 @@ const rubaid = {
   <a href="https://www.facebook.com/rubaid.rahman.589" target="_blank">
     <img src="https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white" />
   </a>
-  <a href="https://linkedin.com/in/rubaid-islam-603831370" target="_blank">
+  <a href="https://linkedin.com/in/rubaid07" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
   <a href="mailto:mohammadrubaid07@gmail.com" target="_blank">
