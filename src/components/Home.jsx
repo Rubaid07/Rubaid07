@@ -51,7 +51,7 @@ const Home = () => {
             </p>
 
             <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
-              I transform ideas into pixel-perfect experiences using <span className="text-blue-400">React</span>, <span className="text-blue-400">Next.js</span>, and <span className="text-blue-400">TailwindCSS</span>.
+              I transform ideas into pixel-perfect experiences using <span className="text-blue-400">React</span>, <span className="text-blue-400">JavaScript</span>, and <span className="text-blue-400">TailwindCSS</span>.
             </p>
 
             <div className="flex gap-3 justify-center md:justify-start pt-2 sm:pt-4">

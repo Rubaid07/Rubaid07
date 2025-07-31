@@ -4,11 +4,19 @@ import { FiExternalLink, FiGithub } from 'react-icons/fi';
 const Projects = () => {
     const projects = [
         {
+            title: "Elyzian",
+            description: "A modern web application for managing insurance policies, agents, and customer interactions built with MERN stack.",
+            tags: ["React", "Tailwind CSS", "Stripe", "Tanstack", "JWT", "NodeJs", "ExpressJs", "MongoDB"],
+            image: "https://i.postimg.cc/dVZJ49p0/Screenshot-2025-07-26-180201.png",
+            github: "https://github.com/Rubaid07/Elyzian",
+            live: "https://elyzian07.web.app"
+        },
+        {
             title: "Pack2Go",
             description: "It is a Full Stack project. it's is a complete tour package booking platform where users can explore, book, and manage travel packages.",
             tags: ["React", "MongoDB", "TailwindCSS", "JWT", "ExpressJs"],
             image: "https://i.postimg.cc/3wxndqTc/pack2go.png",
-            github: "https://github.com/yourusername/ecommerce",
+            github: "https://github.com/Rubaid07/pack2go",
             live: "https://pack2go07.web.app/"
         },
         {
@@ -28,7 +36,7 @@ const Projects = () => {
             live: "https://paypilot07.web.app/"
         },
         {
-            title: "Comming soon",
+            title: "Coming soon",
             description: "A productivity app for organizing tasks with drag-and-drop functionality and team collaboration.",
             tags: ["Next.js", "Firebase", "Tailwind CSS"],
             image: "/taskapp.jpg",
@@ -36,15 +44,7 @@ const Projects = () => {
             live: "https://your-taskapp.com"
         },
         {
-            title: "Comming soon",
-            description: "A productivity app for organizing tasks with drag-and-drop functionality and team collaboration.",
-            tags: ["Next.js", "Firebase", "Tailwind CSS"],
-            image: "/taskapp.jpg",
-            github: "https://github.com/yourusername/taskapp",
-            live: "https://your-taskapp.com"
-        },
-        {
-            title: "Comming soon",
+            title: "Coming soon",
             description: "A personal portfolio website s`howcasing projects and skills with modern animations.",
             tags: ["React", "Framer Motion", "GSAP"],
             image: "/portfolio.jpg",
