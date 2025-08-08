@@ -65,7 +65,7 @@ const rubaid = {
     <img src="https://cdn.simpleicons.org/gmail/ea4335" alt="Gmail" height="32" />
   </a>
   &nbsp;&nbsp;
-  <a href="https://twitter.com/yourusername" target="_blank">
+  <a href="https://x.com/Rubaid077" target="_blank">
     <img src="https://cdn.simpleicons.org/x/1da1f2" alt="Twitter" height="32" />
   </a>
 </p> <br>
