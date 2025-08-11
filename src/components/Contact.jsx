@@ -1,4 +1,5 @@
-import { FaGithub, FaLinkedin, FaFacebook, FaDiscord, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFacebook, FaEnvelope } from 'react-icons/fa';
+import { FaSquareXTwitter } from 'react-icons/fa6';
 
 const Contact = () => {
   return (
@@ -15,7 +16,7 @@ const Contact = () => {
 
         <div className="max-w-2xl mx-auto">
 
-          {/* Enhanced Social Links */}
+          {/* Social Links */}
           <div className="bg-white p-8 rounded-xl shadow-md">
             <div className="flex items-start mb-6">
               <div className="flex-shrink-0 p-2 bg-blue-50 rounded-lg">
@@ -34,7 +35,7 @@ const Contact = () => {
               {[
                 { icon: <FaGithub className="text-gray-700 text-xl" />, name: "GitHub", url: "https://github.com/Rubaid07", color: "bg-gray-50" },
                 { icon: <FaLinkedin className="text-blue-600 text-xl" />, name: "LinkedIn", url: "www.linkedin.com/in/rubaid07", color: "bg-blue-50" },
-                { icon: <FaDiscord className="text-blue-400 text-xl" />, name: "Discord", url: "https://discord.com/invite/Cby8x9HE", color: "bg-blue-50" },
+                { icon: <FaSquareXTwitter className="text-black-400 text-xl" />, name: "X", url: "https://x.com/Rubaid077", color: "bg-blue-50" },
                 { icon: <FaFacebook className="text-blue-500 text-xl" />, name: "Facebook", url: "https://www.facebook.com/rubaid.rahman.589", color: "bg-gray-50" },
               ].map((social) => (
                 <a
@@ -49,7 +50,7 @@ const Contact = () => {
               ))}
             </div>
 
-            {/* Added Contact Methods Section */}
+            {/* Contact Methods Section */}
             <div className="mt-8 pt-6 border-t border-gray-100">
               <h4 className="text-sm font-medium text-gray-500 mb-3">Preferred Contact Methods</h4>
               <div className="flex flex-wrap gap-2">

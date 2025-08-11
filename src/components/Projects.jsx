@@ -40,16 +40,16 @@ const Projects = () => {
             description: "A productivity app for organizing tasks with drag-and-drop functionality and team collaboration.",
             tags: ["Next.js", "Firebase", "Tailwind CSS"],
             image: "/taskapp.jpg",
-            github: "https://github.com/yourusername/taskapp",
-            live: "https://your-taskapp.com"
+            github: "",
+            live: ""
         },
         {
             title: "Coming soon",
             description: "A personal portfolio website s`howcasing projects and skills with modern animations.",
             tags: ["React", "Framer Motion", "GSAP"],
             image: "/portfolio.jpg",
-            github: "https://github.com/yourusername/portfolio",
-            live: "https://your-portfolio.com"
+            github: "",
+            live: ""
         }
     ];
 
@@ -70,7 +70,6 @@ const Projects = () => {
                         <div
                             key={project.title} className="relative group"
                         >
-                            {/* Border */}
                             <div className="absolute inset-0 rounded-xl overflow-hidden p-[1px]">
                                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-400 opacity-0 group-hover:opacity-100 rounded-xl" />
                             </div>
