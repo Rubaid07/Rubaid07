@@ -14,16 +14,24 @@ const Projects = () => {
         {
             title: "Pack2Go",
             description: "It is a Full Stack project. it's is a complete tour package booking platform where users can explore, book, and manage travel packages.",
-            tags: ["React", "MongoDB", "TailwindCSS", "JWT", "ExpressJs"],
-            image: "https://i.postimg.cc/3wxndqTc/pack2go.png",
+            tags: ["React", "MongoDB", "TailwindCSS", "JWT", "ExpressJs", "React Router", "Axios", "Framer Motion"],
+            image: "https://i.postimg.cc/j2MqWVTX/Screenshot-8.png",
             github: "https://github.com/Rubaid07/pack2go",
             live: "https://pack2go07.web.app/"
+        },
+        {
+            title: "Study Mate",
+            description: "StudyMate is an all-in-one web application designed to make student life easier and more organized. It combines essential academic tools with productivity features to help students manage their studies, finances, and overall wellness.",
+            tags: ["Gemini API", "React", "ExpressJs", "MongoDB", "Axios", "TailwindCSS", "Firebase"],
+            image: "https://i.postimg.cc/3R0thjNz/Screenshot-3.png",
+            github: "https://github.com/Rubaid07/StudyMate",
+            live: "https://study-mate-07.web.app/"
         },
         {
             title: "Task Tide",
             description: "It is a Full Stack project. it's simple and modern platform where users can post freelance tasks, and freelancers can bid on those tasks based on skills, budget, and deadlines.",
             tags: ["React", "Firebase", "Tailwind CSS", "ExpressJs", "MongoDB"],
-            image: "https://i.postimg.cc/FzLPhJ4F/tasktide.png",
+            image: "https://i.postimg.cc/vmfNDQzr/Screenshot-7.png",
             github: "https://github.com/Rubaid07/TaskTide",
             live: "https://tasktide07.web.app/"
         },
@@ -34,14 +42,6 @@ const Projects = () => {
             image: "https://i.postimg.cc/g0z8JPmC/paypilot.png",
             github: "https://github.com/Rubaid07/PayPilot",
             live: "https://paypilot07.web.app/"
-        },
-        {
-            title: "Coming soon",
-            description: "A productivity app for organizing tasks with drag-and-drop functionality and team collaboration.",
-            tags: ["Next.js", "Firebase", "Tailwind CSS"],
-            image: "/taskapp.jpg",
-            github: "",
-            live: ""
         },
         {
             title: "Coming soon",
