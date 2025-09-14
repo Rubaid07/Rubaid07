@@ -22,7 +22,7 @@ const Projects = () => {
         {
             title: "Study Mate",
             description: "StudyMate is an all-in-one web application designed to make student life easier and more organized. It combines essential academic tools with productivity features to help students manage their studies, finances, and overall wellness.",
-            tags: ["Gemini API", "React", "ExpressJs", "MongoDB", "Axios", "TailwindCSS", "Firebase"],
+            tags: ["Gemini API", "React", "ExpressJs", "Axios", "MongoDB",  "TailwindCSS", "Firebase"],
             image: "https://i.postimg.cc/3R0thjNz/Screenshot-3.png",
             github: "https://github.com/Rubaid07/StudyMate",
             live: "https://study-mate-07.web.app/"

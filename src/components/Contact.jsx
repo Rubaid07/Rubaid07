@@ -34,7 +34,7 @@ const Contact = () => {
             <div className="grid grid-cols-2 gap-4">
               {[
                 { icon: <FaGithub className="text-gray-700 text-xl" />, name: "GitHub", url: "https://github.com/Rubaid07", color: "bg-gray-50" },
-                { icon: <FaLinkedin className="text-blue-600 text-xl" />, name: "LinkedIn", url: "www.linkedin.com/in/rubaid07", color: "bg-blue-50" },
+                { icon: <FaLinkedin className="text-blue-600 text-xl" />, name: "LinkedIn", url: "https://www.linkedin.com/in/rubaid07", color: "bg-blue-50" },
                 { icon: <FaSquareXTwitter className="text-black-400 text-xl" />, name: "X", url: "https://x.com/Rubaid077", color: "bg-blue-50" },
                 { icon: <FaFacebook className="text-blue-500 text-xl" />, name: "Facebook", url: "https://www.facebook.com/rubaid.rahman.589", color: "bg-gray-50" },
               ].map((social) => (
@@ -50,7 +50,7 @@ const Contact = () => {
               ))}
             </div>
 
-            {/* Contact Methods Section */}
+            {/* Contact Section */}
             <div className="mt-8 pt-6 border-t border-gray-100">
               <h4 className="text-sm font-medium text-gray-500 mb-3">Preferred Contact Methods</h4>
               <div className="flex flex-wrap gap-2">
@@ -70,7 +70,6 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* New "Let's Work Together" Section */}
           <div className="mt-10 bg-gradient-to-r from-blue-500 to-cyan-500 p-8 rounded-xl shadow-lg text-center">
             <h3 className="text-2xl font-bold text-white mb-4">Want to work together?</h3>
             <p className="text-blue-100 mb-6">
