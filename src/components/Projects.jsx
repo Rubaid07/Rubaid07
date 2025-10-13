@@ -1,5 +1,6 @@
 import { FaGithub } from 'react-icons/fa';
 import { FiExternalLink, FiGithub } from 'react-icons/fi';
+import { FaUsers } from 'react-icons/fa';
 
 const Projects = () => {
     const projects = [
@@ -9,7 +10,7 @@ const Projects = () => {
             tags: ["React", "Tailwind CSS", "Stripe", "Tanstack", "JWT", "NodeJs", "ExpressJs", "MongoDB"],
             image: "https://i.postimg.cc/dVZJ49p0/Screenshot-2025-07-26-180201.png",
             github: "https://github.com/Rubaid07/Elyzian",
-            live: "https://elyzian07.web.app"
+            live: "https://elyzian07.web.firebaseapp.com"
         },
         {
             title: "Pack2Go",
@@ -17,7 +18,18 @@ const Projects = () => {
             tags: ["React", "MongoDB", "TailwindCSS", "JWT", "ExpressJs", "React Router", "Axios", "Framer Motion"],
             image: "https://i.postimg.cc/j2MqWVTX/Screenshot-8.png",
             github: "https://github.com/Rubaid07/pack2go",
-            live: "https://pack2go07.web.app/"
+            live: "https://pack2go07.web.firebaseapp.com/"
+        },
+        {
+            title: "ByteStory",
+            description: "ByteStory is an AI-driven blogging platform that empowers creators with smart tools for content creation, optimization, and sharing.",
+           tags: ["Next.Js", "Socket.io", "MongoDB", "Gemini API" ,"Mongoose", "JWT", "React", "Axios"],
+            image: "https://i.postimg.cc/HLk9q888/Screenshot-8.png",
+            github: "https://github.com/shahnewaz5646455/ByteStory?fbclid=IwY2xjawMzaplleHRuA2FlbQIxMABicmlkETFQZWQ5SXJKcWlUQ2twckxtAR7aJ2LY9JXJKySfj4RwuESdwsNUAJ_O4RTxPRa-TMe0UiPR4MYR87Ma6kh2sg_aem_096HvU97o5sNs3HtT3yg4A",
+            live: "https://byte-story.vercel.app/",
+            teamProject: true,
+            teamSize: 5,
+            role: "Full Stack Developer & UI designer"
         },
         {
             title: "Study Mate",
@@ -25,7 +37,7 @@ const Projects = () => {
             tags: ["Gemini API", "React", "ExpressJs", "Axios", "MongoDB",  "TailwindCSS", "Firebase"],
             image: "https://i.postimg.cc/3R0thjNz/Screenshot-3.png",
             github: "https://github.com/Rubaid07/StudyMate",
-            live: "https://study-mate-07.web.app/"
+            live: "https://study-mate-07.web.firebaseapp.com/"
         },
         {
             title: "Task Tide",
@@ -33,7 +45,7 @@ const Projects = () => {
             tags: ["React", "Firebase", "Tailwind CSS", "ExpressJs", "MongoDB"],
             image: "https://i.postimg.cc/vmfNDQzr/Screenshot-7.png",
             github: "https://github.com/Rubaid07/TaskTide",
-            live: "https://tasktide07.web.app/"
+            live: "https://tasktide07.web.firebaseapp.com/"
         },
         {
             title: "Pay Pilot",
@@ -41,16 +53,8 @@ const Projects = () => {
             tags: ["React", "Firebase", "Tailwind CSS", "Daisyui"],
             image: "https://i.postimg.cc/g0z8JPmC/paypilot.png",
             github: "https://github.com/Rubaid07/PayPilot",
-            live: "https://paypilot07.web.app/"
+            live: "https://paypilot07.web.firebaseapp.com/"
         },
-        {
-            title: "Coming soon",
-            description: "A personal portfolio website s`howcasing projects and skills with modern animations.",
-            tags: ["React", "Framer Motion", "GSAP"],
-            image: "/portfolio.jpg",
-            github: "",
-            live: ""
-        }
     ];
 
     return (
@@ -68,25 +72,51 @@ const Projects = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project) => (
                         <div
-                            key={project.title} className="relative group"
+                            key={project.title} 
+                            className="relative group"
                         >
+                            {/* Team Project Badge */}
+                            {project.teamProject && (
+                                <div className="absolute top-4 right-4 z-10">
+                                    <div className="flex items-center gap-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg">
+                                        <FaUsers className="text-xs" />
+                                        <span>Team Project</span>
+                                    </div>
+                                </div>
+                            )}
+
                             <div className="absolute inset-0 rounded-xl overflow-hidden p-[1px]">
                                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-400 opacity-0 group-hover:opacity-100 rounded-xl" />
                             </div>
 
                             <div className="relative bg-white rounded-xl h-full overflow-hidden shadow-md hover:shadow-lg">
                                 {/* Project Image */}
-                                <div className="overflow-hidden">
+                                <div className="overflow-hidden relative">
                                     <img
                                         src={project.image}
                                         alt={project.title}
-                                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                        className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
                                     />
+                                    {/* Team Project Role */}
+                                    {project.teamProject && (
+                                        <div className="absolute bottom-2 left-2">
+                                            <span className="bg-black/70 text-white px-2 py-1 rounded text-xs">
+                                                Role: {project.role}
+                                            </span>
+                                        </div>
+                                    )}
                                 </div>
 
                                 {/* Project Content */}
                                 <div className="p-6">
-                                    <h3 className="text-xl font-bold text-gray-800 mb-2">{project.title}</h3>
+                                    <div className="flex items-start justify-between mb-2">
+                                        <h3 className="text-xl font-bold text-gray-800">{project.title}</h3>
+                                        {project.teamProject && (
+                                            <span className="text-xs bg-purple-100 text-purple-600 px-2 py-1 rounded-full">
+                                                {project.teamSize} members
+                                            </span>
+                                        )}
+                                    </div>
                                     <p className="text-gray-600 mb-4">{project.description}</p>
 
                                     {/* Tags */}
@@ -94,7 +124,11 @@ const Projects = () => {
                                         {project.tags.map(tag => (
                                             <span
                                                 key={tag}
-                                                className="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-full"
+                                                className={`px-3 py-1 text-xs font-medium rounded-full ${
+                                                    tag === 'Team Project' 
+                                                        ? 'bg-purple-100 text-purple-700 border border-purple-200'
+                                                        : 'bg-gray-100 text-gray-700'
+                                                }`}
                                             >
                                                 {tag}
                                             </span>
@@ -106,6 +140,7 @@ const Projects = () => {
                                         <a
                                             href={project.github}
                                             target="_blank"
+                                            rel="noopener noreferrer"
                                             className="flex items-center px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-lg transition duration-300"
                                         >
                                             <FiGithub className="mr-2" />
@@ -114,6 +149,7 @@ const Projects = () => {
                                         <a
                                             href={project.live}
                                             target="_blank"
+                                            rel="noopener noreferrer"
                                             className="flex items-center px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition duration-300"
                                         >
                                             <FiExternalLink className="mr-2" />
