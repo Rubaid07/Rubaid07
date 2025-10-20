@@ -13,11 +13,7 @@
 const rubaid = {
   role: "Frontend Web Developer",
   specialty: ["Responsive Design", "UI/UX", "React.js"],
-  techStack: ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express", "MongoDB"],
-  currentFocus: [
-    "Exploring Next.js",
-    "Improving Performance in React Apps"
-  ],
+  techStack: ["HTML", "CSS", "JavaScript", "TailwindCSS" "React", "Next.js", "Express", "MongoDB"],
   passion: "Building clean, fast & interactive web experiences"
 }
 ```
