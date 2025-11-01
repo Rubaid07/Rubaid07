@@ -10,7 +10,7 @@ const Projects = () => {
             tags: ["React", "Tailwind CSS", "Stripe", "Tanstack", "JWT", "NodeJs", "ExpressJs", "MongoDB"],
             image: "https://i.postimg.cc/dVZJ49p0/Screenshot-2025-07-26-180201.png",
             github: "https://github.com/Rubaid07/Elyzian",
-            live: "https://elyzian07.web.firebaseapp.com"
+            live: "https://elyzian07.web.app"
         },
         {
             title: "Pack2Go",
@@ -18,7 +18,7 @@ const Projects = () => {
             tags: ["React", "MongoDB", "TailwindCSS", "JWT", "ExpressJs", "React Router", "Axios", "Framer Motion"],
             image: "https://i.postimg.cc/j2MqWVTX/Screenshot-8.png",
             github: "https://github.com/Rubaid07/pack2go",
-            live: "https://pack2go07.web.firebaseapp.com/"
+            live: "https://pack2go07.web.app/"
         },
         {
             title: "ByteStory",
@@ -29,7 +29,6 @@ const Projects = () => {
             live: "https://byte-story.vercel.app/",
             teamProject: true,
             teamSize: 5,
-            role: "Full Stack Developer & UI designer"
         },
         {
             title: "Study Mate",
@@ -37,7 +36,7 @@ const Projects = () => {
             tags: ["Gemini API", "React", "ExpressJs", "Axios", "MongoDB",  "TailwindCSS", "Firebase"],
             image: "https://i.postimg.cc/3R0thjNz/Screenshot-3.png",
             github: "https://github.com/Rubaid07/StudyMate",
-            live: "https://study-mate-07.web.firebaseapp.com/"
+            live: "https://study-mate-07.web.app/"
         },
         {
             title: "Task Tide",
@@ -45,7 +44,7 @@ const Projects = () => {
             tags: ["React", "Firebase", "Tailwind CSS", "ExpressJs", "MongoDB"],
             image: "https://i.postimg.cc/vmfNDQzr/Screenshot-7.png",
             github: "https://github.com/Rubaid07/TaskTide",
-            live: "https://tasktide07.web.firebaseapp.com/"
+            live: "https://tasktide07.web.app/"
         },
         {
             title: "Pay Pilot",
@@ -53,7 +52,7 @@ const Projects = () => {
             tags: ["React", "Firebase", "Tailwind CSS", "Daisyui"],
             image: "https://i.postimg.cc/g0z8JPmC/paypilot.png",
             github: "https://github.com/Rubaid07/PayPilot",
-            live: "https://paypilot07.web.firebaseapp.com/"
+            live: "https://paypilot07.web.app/"
         },
     ];
 
@@ -97,14 +96,6 @@ const Projects = () => {
                                         alt={project.title}
                                         className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
                                     />
-                                    {/* Team Project Role */}
-                                    {project.teamProject && (
-                                        <div className="absolute bottom-2 left-2">
-                                            <span className="bg-black/70 text-white px-2 py-1 rounded text-xs">
-                                                Role: {project.role}
-                                            </span>
-                                        </div>
-                                    )}
                                 </div>
 
                                 {/* Project Content */}
