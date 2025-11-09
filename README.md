@@ -4,7 +4,7 @@
   
   <!-- Hero Section -->
   <h1>
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=818CF8&center=true&vCenter=true&width=600&lines=Hey%2C+I'm+Rubaid+Islam+%F0%9F%91%8B;Frontend+Web+Developer+%F0%9F%92%BB;React+Enthusiast+%E2%9A%9B%EF%B8%8F;UI%2FUX+Learner+%F0%9F%8E%A8" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=818CF8&center=true&vCenter=true&width=600&lines=Hey%2C+I'm+Rubaid+Islam;Frontend+Web+Developer;React+Enthusiast;UI%2FUX+Learner" alt="Typing SVG" />
   </h1>
   
   <p>
