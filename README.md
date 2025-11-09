@@ -1,24 +1,6 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" alt="github-contribution-snake" style="border-radius: 10px; border: 3px solid transparent; border-image: linear-gradient(to right, #6366f1, #3b82f6); border-image-slice: 1;" />
   
-  
-  <!-- Hero Section -->
-  <h1>
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=818CF8&center=true&vCenter=true&width=600&lines=Hey%2C+I'm+Rubaid+Islam;Frontend+Web+Developer;React+Enthusiast;UI%2FUX+Learner" alt="Typing SVG" />
-  </h1>
-  
-  <p>
-    <img src="https://img.shields.io/badge/Frontend_Developer-6366f1?style=for-the-badge&logo=react&logoColor=white" />
-    <img src="https://img.shields.io/badge/Based_in-Bangladesh-38bdf8?style=for-the-badge&logo=google-maps&logoColor=white" />
-    <img src="https://img.shields.io/badge/Open_to-Collaborate-3b82f6?style=for-the-badge&logo=handshake&logoColor=white" />
-  </p>
-
-  <p>
-    <a href="https://facebook.com/rubaid.rahman.589"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" /></a>
-    <a href="https://linkedin.com/in/rubaid07"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-    <a href="https://x.com/Rubaid077"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" /></a>
-    <a href="mailto:mohammadrubaid07@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  </p>
 
 </div>
 
