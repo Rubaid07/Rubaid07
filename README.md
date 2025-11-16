@@ -1,6 +1,7 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" alt="github-contribution-snake" style="border-radius: 10px; border: 3px solid transparent; border-image: linear-gradient(to right, #6366f1, #3b82f6); border-image-slice: 1;" />
   
+<<<<<<< HEAD
   
   <!-- Hero Section -->
   <h1>
@@ -19,6 +20,8 @@
     <a href="https://x.com/Rubaid077"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" /></a>
     <a href="mailto:mohammadrubaid07@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
   </p>
+=======
+>>>>>>> 155e426c42b91670c069bafd8d588980f31bd26f
 
 </div>
 
@@ -174,4 +177,8 @@ const rubaid = {
   
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer&text=Happy%20Coding!&fontSize=40&fontAlignY=70&animation=twinkling" width="100%" />
 
+<<<<<<< HEAD
 </div>
+=======
+</div>
+>>>>>>> 155e426c42b91670c069bafd8d588980f31bd26f
