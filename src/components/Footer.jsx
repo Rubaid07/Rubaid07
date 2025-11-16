@@ -1,10 +1,10 @@
 const Footer = () => {
     return (
-        <footer className="bg-gray-50 border-t border-gray-200 py-5">
+        <footer className="bg-black border-t border-gray-800 py-5">
                 <div className="flex justify-center">
-                        <p className="text-gray-600 text-sm">
+                        <p className="text-gray-300 text-sm">
                             Copyright © {new Date().getFullYear()} - All rights reserved by 
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500 font-medium ml-1">
+                            <span className="text-cyan-500 font-medium ml-1">
                                 Rubaid Islam
                             </span>
                         </p>
