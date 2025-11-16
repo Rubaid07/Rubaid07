@@ -12,7 +12,7 @@ const Projects = () => {
   const commands = [
     '$ npm run projects',
     '$ git init portfolio',
-    '$ node build-projects.js', 
+    '$ node build-projects.js',
     '$ projects loaded'
   ];
 
@@ -90,7 +90,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className=" bg-gradient-to-br from-black via-gray-900 to-black relative overflow-hidden pb-20">
+    <section id="projects" className="   relative overflow-hidden pb-20">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(6,182,212,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(6,182,212,0.05)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,black,transparent)]" />
 
@@ -103,18 +103,18 @@ const Projects = () => {
         <div className="bg-black/80 backdrop-blur-2xl border border-cyan-400/40 rounded-2xl p-5 md:p-7 lg:p-9 shadow-2xl shadow-cyan-500/30 mb-16 relative overflow-hidden">
           {/* Border Effect */}
           <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-pink-500/10 animate-pulse" />
-          
+
           <div className="relative z-10">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3">
                 <div className="flex space-x-2">
-                  <motion.div 
+                  <motion.div
                     className="w-3 h-3 bg-red-500 rounded-full"
                   />
-                  <motion.div 
+                  <motion.div
                     className="w-3 h-3 bg-yellow-500 rounded-full"
                   />
-                  <motion.div 
+                  <motion.div
                     className="w-3 h-3 bg-green-500 rounded-full"
                   />
                 </div>
@@ -135,17 +135,17 @@ const Projects = () => {
                 <span className="text-white">{displayText}</span>
                 <span className="text-cyan-400 animate-pulse">▊</span>
               </div>
-              
+
               <h2 className="text-3xl md:text-5xl font-bold text-center mb-4">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500">
                   PROJECT MATRIX
                 </span>
               </h2>
-              
+
               <p className="text-gray-400 text-center text-base mb-4">
                 <span className="text-cyan-400">//</span> A collection of my development endeavors and innovative solutions
               </p>
-              
+
               <div className="flex justify-center space-x-4 text-sm text-gray-500">
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
@@ -180,7 +180,7 @@ const Projects = () => {
 
               {/* Project Card */}
               <div className="relative bg-gradient-to-br from-black/90 to-gray-900/90 backdrop-blur-xl border-2 border-cyan-400/30 rounded-2xl overflow-hidden h-full hover:border-cyan-400/60 hover:shadow-2xl hover:shadow-cyan-500/20 transition-all duration-500">
-                
+
                 <div className="relative overflow-hidden">
                   <img
                     src={project.image}

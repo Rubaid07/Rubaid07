@@ -20,7 +20,7 @@ const SkillsMatrix = () => {
 
   const commands = [
     '$ npm run skills',
-    '$ git init tech-stack',
+    '$ git init tech',
     '$ node scan-stack.js',
     '$ system online'
   ];
@@ -106,7 +106,7 @@ const SkillsMatrix = () => {
     .flatMap(([_, cat]) => cat.skills);
 
   return (
-    <section id="skills" className="bg-gradient-to-br from-black via-gray-900 to-black py-36 relative overflow-hidden ">
+    <section id="skills" className="  py-20 relative overflow-hidden ">
       {/* Grid Background */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(6,182,212,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(6,182,212,0.05)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,black,transparent)]" />
 
@@ -210,8 +210,8 @@ const SkillsMatrix = () => {
               key={key}
               onClick={() => setActiveCategory(activeCategory === key ? 'all' : key)}
               className={`relative px-6 py-3 rounded-xl border-2 font-mono text-sm font-bold transition-all duration-300 flex items-center space-x-2 overflow-hidden hover:cursor-pointer ${activeCategory === key || activeCategory === 'all'
-                  ? `bg-gradient-to-r ${category.color} text-white border-transparent shadow-2xl ${category.glow}`
-                  : `${category.border} text-gray-400 hover:text-white hover:border-cyan-400/60 bg-black/40 backdrop-blur-sm`
+                ? `bg-gradient-to-r ${category.color} text-white border-transparent shadow-2xl ${category.glow}`
+                : `${category.border} text-gray-400 hover:text-white hover:border-cyan-400/60 bg-black/40 backdrop-blur-sm`
                 }`}
               whileTap={{ scale: 0.95 }}
             >
@@ -249,7 +249,7 @@ const SkillsMatrix = () => {
             >
               <div className="flex flex-col items-center justify-center space-y-3">
                 <div className={`relative bg-gradient-to-br ${skill.bgGradient} rounded-2xl p-4 shadow-lg`}>
-                  
+
                   <div className={`relative ${skill.color}`}>
                     {skill.icon}
                   </div>

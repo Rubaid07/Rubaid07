@@ -8,14 +8,14 @@ import SkillsMatrix from './components/SkillsMatrix'
 
 function App() {
   return (
-    <>
+    <div className='bg-gradient-to-br from-black via-gray-900 to-black'>
       <Navbar />
       <Home />
       <SkillsMatrix />
       <ProjectsShowcase />
       <Contact />
       <Footer />
-    </>
+    </div>
   )
 }
 

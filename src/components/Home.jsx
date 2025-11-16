@@ -8,10 +8,10 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="relative bg-black overflow-hidden flex items-center"
+      className="relative pb-20  overflow-hidden flex items-center"
     >
       {/* Laser Background */}
-      <div className="absolute inset-0 pointer-events-none flex justify-center md:h-[1000px] sm:h-[780px] h-[710px]">
+      <div className="absolute inset-0 pointer-events-none flex justify-center md:h-[1000px] sm:h-[770px] h-[736px]">
         <div className="w-full max-w-8xl">
           <LaserFlow
             horizontalBeamOffset={0.02}

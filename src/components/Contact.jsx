@@ -36,34 +36,34 @@ const Contact = () => {
   }, [commandIndex]);
 
   const socialLinks = [
-    { 
-      icon: <FaGithub className="text-xl" />, 
-      name: "GitHub", 
-      url: "https://github.com/Rubaid07", 
+    {
+      icon: <FaGithub className="text-xl" />,
+      name: "GitHub",
+      url: "https://github.com/Rubaid07",
       color: "from-gray-600 to-gray-800",
       hoverColor: "hover:from-gray-500 hover:to-gray-700",
       borderColor: "border-gray-500/30"
     },
-    { 
-      icon: <FaLinkedin className="text-xl" />, 
-      name: "LinkedIn", 
-      url: "https://www.linkedin.com/in/rubaid07", 
+    {
+      icon: <FaLinkedin className="text-xl" />,
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/rubaid07",
       color: "from-blue-600 to-blue-800",
       hoverColor: "hover:from-blue-500 hover:to-blue-700",
       borderColor: "border-blue-500/30"
     },
-    { 
-      icon: <FaSquareXTwitter className="text-xl" />, 
-      name: "X", 
-      url: "https://x.com/Rubaid077", 
+    {
+      icon: <FaSquareXTwitter className="text-xl" />,
+      name: "X",
+      url: "https://x.com/Rubaid077",
       color: "from-black to-gray-800",
       hoverColor: "hover:from-gray-700 hover:to-gray-900",
       borderColor: "border-gray-600/30"
     },
-    { 
-      icon: <FaFacebook className="text-xl" />, 
-      name: "Facebook", 
-      url: "https://www.facebook.com/rubaid.rahman.589", 
+    {
+      icon: <FaFacebook className="text-xl" />,
+      name: "Facebook",
+      url: "https://www.facebook.com/rubaid.rahman.589",
       color: "from-blue-500 to-blue-700",
       hoverColor: "hover:from-blue-400 hover:to-blue-600",
       borderColor: "border-blue-400/30"
@@ -71,10 +71,10 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-black via-gray-900 to-black relative overflow-hidden">
+    <section id="contact" className="py-20   relative overflow-hidden">
       {/* Animated Bg */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(6,182,212,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(6,182,212,0.05)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,black,transparent)]" />
-      
+
       {/* Floating Elements */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-cyan-500/10 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
@@ -85,7 +85,7 @@ const Contact = () => {
           className="bg-black/80 backdrop-blur-2xl border border-cyan-400/40 rounded-2xl p-5 md:p-7 lg:p-9 shadow-2xl shadow-cyan-500/30 mb-16 relative overflow-hidden"
         >
           <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-pink-500/10 animate-pulse" />
-          
+
           <div className="relative z-10">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3">
@@ -111,17 +111,17 @@ const Contact = () => {
                 <span className="text-white">{displayText}</span>
                 <span className="text-cyan-400 animate-pulse">▊</span>
               </div>
-              
+
               <h2 className="text-3xl md:text-5xl font-bold text-center mb-4">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500">
                   CONNECT MATRIX
                 </span>
               </h2>
-              
+
               <p className="text-gray-400 text-center text-base mb-4">
                 <span className="text-cyan-400">//</span> Let's collaborate and build something amazing together
               </p>
-              
+
               <div className="flex justify-center space-x-4 text-sm text-gray-500">
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
@@ -158,8 +158,8 @@ const Contact = () => {
                 </div>
                 <div className="ml-4">
                   <h4 className="text-sm font-medium text-gray-400 font-mono">EMAIL</h4>
-                  <a 
-                    href="mailto:mohammadrubaid07@gmail.com" 
+                  <a
+                    href="mailto:mohammadrubaid07@gmail.com"
                     className="text-cyan-300 hover:text-cyan-200 font-mono text-sm transition-colors duration-300"
                   >
                     mohammadrubaid07@gmail.com
@@ -210,7 +210,7 @@ const Contact = () => {
               className="bg-gradient-to-br from-cyan-500/10 via-blue-500/10 to-purple-500/10 backdrop-blur-2xl border-2 border-cyan-400/30 rounded-2xl p-6 relative overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/5 to-purple-500/5 animate-pulse" />
-              
+
               <div className="relative z-10">
                 <div className="flex items-center space-x-3 mb-6">
                   <div className="p-2 bg-cyan-500/30 rounded-lg border border-cyan-400/30">
