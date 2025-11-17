@@ -10,8 +10,8 @@ const Contact = () => {
   const [commandIndex, setCommandIndex] = useState(0);
 
   const commands = [
-    '$ node contact-system.js',
-    '$ git init connection',
+    '$ node build contact',
+    '$ git init connect',
     '$ npm run message',
     '$ system ready'
   ];

@@ -12,7 +12,7 @@ const Projects = () => {
   const commands = [
     '$ npm run projects',
     '$ git init portfolio',
-    '$ node build-projects.js',
+    '$ node project.js',
     '$ projects loaded'
   ];
 
