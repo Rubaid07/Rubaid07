@@ -11,16 +11,16 @@ const Home = () => {
       className="relative pb-20  overflow-hidden flex items-center"
     >
       {/* Laser Background */}
-      <div className="absolute inset-0 pointer-events-none flex justify-center md:h-[1000px] sm:h-[770px] h-[736px]">
-        <div className="w-full max-w-8xl">
-          <LaserFlow
-            horizontalBeamOffset={0.02}
-            verticalBeamOffset={0.0}
-            color="#06b6d4"
-            className="w-full h-full"
-          />
-        </div>
-      </div>
+     <div className="absolute inset-0 pointer-events-none flex justify-center md:h-[1000px] sm:h-[770px] h-[736px] max-[639px]:h-[680px]">
+  <div className="w-full max-w-8xl">
+    <LaserFlow
+      horizontalBeamOffset={0.02}
+      verticalBeamOffset={0.0}
+      color="#06b6d4"
+      className="w-full h-full"
+    />
+  </div>
+</div>
 
       {/* Content Wrapper */}
       <div className="relative w-full z-10 flex flex-col items-center">
@@ -33,11 +33,11 @@ const Home = () => {
             transition={{ duration: 0.7 }}
             className="space-y-4 max-w-xl"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-cyan-400 leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-cyan-400 leading-tight">
               Hey, I'm Rubaid Islam
             </h2>
 
-            <p className="text-gray-300 text-base md:text-lg leading-relaxed">
+            <p className="text-gray-300 text-[15px] md:text-lg leading-relaxed">
               I am a passionate Frontend Web Developer who loves creating beautiful,
               efficient, and user-friendly websites.
             </p>

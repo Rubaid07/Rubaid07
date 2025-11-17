@@ -37,6 +37,7 @@ html {
   animation: gradient-x 3s linear infinite;
 }
 
+
 @keyframes gradient-x {
   0% {
     background-position: 100% 50%;
