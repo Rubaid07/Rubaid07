@@ -84,8 +84,8 @@ const rubaid = {
 ## GitHub Analytics
 
 <div align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Rubaid07&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=818CF8&icon_color=818CF8&text_color=FFFFFF&count_private=true&include_all_commits=true" alt="GitHub Stats" />
-  <img width="49%" src="https://streak-stats.demolab.com?user=Rubaid07&theme=tokyonight&hide_border=true&background=0D1117&ring=818CF8&fire=818CF8&currStreakLabel=818CF8" alt="GitHub Streak" />
+  <img width="49%" src="https://readmestats.999857.xyz/api?username=Rubaid07&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=818CF8&icon_color=818CF8&text_color=FFFFFF&count_private=true&include_all_commits=true" alt="GitHub Stats" />
+  <img width="49%" src="https://github-readme-streak-stats-eight.vercel.app?user=Rubaid07&theme=tokyonight&hide_border=true&background=0D1117&ring=818CF8&fire=818CF8&currStreakLabel=818CF8" alt="GitHub Streak" />
 </div>
 
 <div align="center">
@@ -102,8 +102,8 @@ const rubaid = {
 
 <div align="center">
 
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=Rubaid07&repo=elyzian&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=818CF8&icon_color=818CF8)](https://github.com/Rubaid07/Elyzian)
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=Rubaid07&repo=bytestory&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=818CF8&icon_color=818CF8)](https://github.com/Rubaid07/ByteStory)
+[![ReadMe Card](https://readmestats.999857.xyz/api/pin/?username=Rubaid07&repo=elyzian&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=818CF8&icon_color=818CF8)](https://github.com/Rubaid07/Elyzian)
+[![ReadMe Card](https://readmestats.999857.xyz/api/pin/?username=Rubaid07&repo=bytestory&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=818CF8&icon_color=818CF8)](https://github.com/Rubaid07/ByteStory)
 
 </div>
 
