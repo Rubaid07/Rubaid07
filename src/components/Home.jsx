@@ -14,7 +14,7 @@ const Home = () => {
      <div className="absolute inset-0 pointer-events-none flex justify-center md:h-[1000px] sm:h-[770px]  max-[639px]:h-[680px] max-[393px]:h-[736px]">
   <div className="w-full max-w-8xl">
     <LaserFlow
-      horizontalBeamOffset={0.02}
+      horizontalBeamOffset={0.00}
       verticalBeamOffset={0.0}
       color="#06b6d4"
       className="w-full h-full"
