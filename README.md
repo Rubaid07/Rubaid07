@@ -89,7 +89,7 @@ const rubaid = {
 </div>
 
 <div align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rubaid07&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=818CF8&text_color=FFFFFF&hide=php,java" alt="Top Languages" />
+  <img width="49%" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Rubaid07&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=818CF8&text_color=FFFFFF&hide=php,java" alt="Top Languages" />
 </div>
 
 <div align="center">
